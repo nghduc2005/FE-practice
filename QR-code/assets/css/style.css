@@ -6,40 +6,46 @@
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
   background-color: #d5e1ef;
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh
 }
 
 .qr-component {
-  width: 375px;
+  width: 37.5rem;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  padding: 15px;
-  margin-top: 100px;
-  border-radius: 20px;
+  padding: 1.5rem;
+  border-radius: 2rem;
 }
 
 .qr-component .qr-code {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 
 .qr-component .desc {
-  margin-top: 20px;
+  margin-top: 2rem;
   text-align: center;
   background-color: white;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .qr-component .desc .title {
   background-color: white;
-  font-size: 25px;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .qr-component .desc .sub-title {
   font-weight: 400;
   background-color: white;
-  font-size: 15px;
+  font-size: 1.5rem;
   color: gray;
 }

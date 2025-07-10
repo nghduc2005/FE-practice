@@ -11,22 +11,26 @@ body {
   background-color: #f4d04e;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .blog-preview-card {
-  width: 384px;
-  padding: 24px;
+  width: 38.4rem;
+  padding: 2.4rem;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
-  border-radius: 20px;
-  border: 1px solid black;
-  box-shadow: 8px 8px 0 0 black;
+  margin-top: 10rem;
+  border-radius: 2rem;
+  border: 1rem solid black;
+  box-shadow: 8rem 8rem 0 0 black;
   align-items: center;
 }
 
 .blog-preview-card .block-image {
-  border-radius: 20px;
-  margin-bottom: 24px;
+  border-radius: 2rem;
+  margin-bottom: 2.4rem;
 }
 
 .blog-preview-card .content {
@@ -37,29 +41,29 @@ body {
 .blog-preview-card .content .tag {
   background-color: #f4d04e;
   display: inline-block;
-  padding: 4px 12px;
-  font-size: 14px;
+  padding: 0.4rem 1.2rem;
+  font-size: 1.4rem;
   font-weight: 800;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .blog-preview-card .content .date {
   font-weight: 400;
-  font-size: 14px;
-  margin-bottom: 12px;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .blog-preview-card .content .title {
   font-weight: 800;
-  font-size: 24px;
-  margin-bottom: 12px;
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .blog-preview-card .content .desc {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: gray;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .blog-preview-card .author {
@@ -69,12 +73,12 @@ body {
 
 .blog-preview-card .author .avatar {
   aspect-ratio: 1/1;
-  width: 32px;
-  margin-right: 12px;
+  width: 3.2rem;
+  margin-right: 1.2rem;
 }
 
 .blog-preview-card .author .name-author {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 800;
   
 }
