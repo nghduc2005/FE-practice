@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;;
+}
+
+body {
+  background-color: #141414;
+}
+
+html {
+  font-size: 62.5%;
+  color: white;
+}
+
+.social-profile {
+  width: 20%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  background-color: #1f1f1f;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.social-profile .profile {
+  margin-bottom: 3rem;
+}
+
+.social-profile .profile .avatar {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.social-profile .profile .name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.social-profile .profile .location {
+  font-size: 1.4rem;
+  color: #c5e657;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+.social-profile .profile .short-desc {
+  font-size: 1.2rem;
+}
+
+.social-profile .social-links {
+  list-style-type: none;
+  font-size: 1.4rem;
+  display: grid;
+  grid-row: 1fr auto;
+  gap: 1.5rem;
+}
+
+.social-profile .social-links li {
+  padding: 1em;
+  background-color: #333333;
+  border-radius: 1rem;
+  font-weight: 400;
+}
+
+.social-profile .social-links li:hover {
+  background-color: #c5e657;
+  color: #141414;
+}
