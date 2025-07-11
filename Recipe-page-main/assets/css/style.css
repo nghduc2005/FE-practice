@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --outfit-font: "Outfit", sans-serif;
+  --young-serif: "Young Serif", serif;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #f3e5d8;
+  font-family: var(--outfit-font);
+  color: #6e6a67;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul li::marker {
+  color: #6b3048;
+  font-size: 0.75rem;
+}
+
+ol li::marker {
+  color: #6b3048;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
+span {
+  padding-left: 1rem;
+}
+.recipe-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  & .container{
+    text-align: left;
+    .image-omelette {
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+    }
+    .introduce {
+      margin-bottom: 2rem;
+      h1 {
+        margin-bottom: 1rem;
+      }
+      .desc {
+        margin-bottom: 1rem;
+      }
+      .prepare-time {
+        padding: 1.5rem;
+        background-color: #fff7fc;
+        border-radius: 1rem;
+        h3 {
+          font-family: var(--outfit-font);
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+        }
+        .preparation-time li b {
+          color: #645d57;
+        }
+      }
+    }
+    .ingredients {
+      margin-bottom: 1.5rem;
+    }
+    .instructions {
+      margin-bottom: 1.5rem;
+    }
+    .nutrition {
+      .desc {
+        margin-bottom: 0.5rem;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        td {
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          padding-left: 1rem;
+          border-bottom: 0.05rem solid #6e6a67;
+          b {
+            color: #6b3048;
+          }
+        }
+        tr:last-child td {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.title {
+  font-family: var(--young-serif);
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #844834;
+}
+
+.head {
+  color: black;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+hr {
+  background-color: #e0e0e0;
+}
