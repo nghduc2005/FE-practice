@@ -22,10 +22,10 @@ html {
 }
 
 .social-profile {
-  max-width: 20vw;
+  max-width: 30rem;
   text-align: center;
   margin-inline: auto;
-  margin-top: 10vh;
+  margin-top: 5rem;
   background-color: #1f1f1f;
   padding: 3rem;
   border-radius: 2rem;
@@ -36,7 +36,7 @@ html {
 }
 
 .social-profile .profile .avatar {
-  width: 5vw;
+  width: 6rem;
   border-radius: 50%;
   margin-bottom: 2rem;
 }
@@ -48,19 +48,19 @@ html {
 }
 
 .social-profile .profile .location {
-  font-size: 1.3vw;
+  font-size: 1.5rem;
   color: #c5e657;
   margin-bottom: 2.5rem;
   font-weight: 600;
 }
 
 .social-profile .profile .short-desc {
-  font-size: 1.4vw;
+  font-size: 1.8rem;
 }
 
 .social-profile .social-links {
   list-style-type: none;
-  font-size: 1vw;
+  font-size: 1.5rem;
   display: grid;
   grid-row: 1fr auto;
   gap: 1.5rem;

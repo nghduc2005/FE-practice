@@ -47,7 +47,7 @@ span {
 .recipe-table {
   margin-left: auto;
   margin-right: auto;
-  width: 50vw;
+  max-width: 50rem;
   padding: 2rem;
   background-color: white;
   border-radius: 1rem;

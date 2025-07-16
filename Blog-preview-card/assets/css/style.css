@@ -9,6 +9,12 @@
 
 body {
   background-color: #f4d04e;
+  line-height: 1.5;
+}
+
+image {
+  display: block;
+  min-width: 100%;
 }
 
 html {
@@ -16,8 +22,7 @@ html {
 }
 
 .blog-preview-card {
-  width: 38.4rem;
-  padding: 2.4rem;
+  max-width: 38.4rem;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
@@ -25,12 +30,16 @@ html {
   border-radius: 2rem;
   border: 0.1rem solid black;
   box-shadow: 0.8rem 0.8rem 0 0 black;
-  align-items: center;
+}
+
+.container {
+  margin: 2.4rem;
 }
 
 .blog-preview-card .block-image {
   border-radius: 2rem;
   margin-bottom: 2.4rem;
+  width: 100%;
 }
 
 .blog-preview-card .content {
@@ -57,6 +66,7 @@ html {
   font-weight: 800;
   font-size: 2.4rem;
   margin-bottom: 1.2rem;
+  line-height: 1;
 }
 
 .blog-preview-card .content .desc {
@@ -73,7 +83,7 @@ html {
 
 .blog-preview-card .author .avatar {
   aspect-ratio: 1/1;
-  width: 3.2rem;
+  max-width: 3.2rem;
   margin-right: 1.2rem;
 }
 
