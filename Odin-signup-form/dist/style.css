@@ -1,0 +1,137 @@
+@import 'https://fonts.cdnfonts.com/css/norse';
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap';
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+p, legend {
+  font-size: 1.5rem;
+}
+
+.sign-in {
+  overflow: hidden;
+  width: 100%;
+}
+.sign-in .container {
+  display: flex;
+}
+
+.image-side {
+  background-image: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  width: 70%;
+  height: 100vh;
+}
+.image-side div {
+  background-color: black;
+  margin-top: 7rem;
+  height: 10rem;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  display: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  justify-content: center;
+}
+.image-side div .logo {
+  max-height: 90%;
+  width: 10vw;
+}
+.image-side div h1 {
+  color: #ffffff;
+  font-family: "Norse", sans-serif;
+  font-size: 7rem;
+}
+
+.sign-in-side {
+  padding-top: 5rem;
+  font-size: 2rem;
+  background-color: #f9fafb;
+}
+.sign-in-side .desc {
+  padding-left: 5rem;
+  padding-right: 10rem;
+}
+.sign-in-side .desc p:last-child {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.sign-in-side .form-block {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding-left: 5rem;
+  padding-right: 7.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  display: grid;
+}
+.sign-in-side .form-block .lengend {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.sign-in-side .form-block #sign-in {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.sign-in-side .form-block #sign-in div label {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.sign-in-side .form-block #sign-in div input {
+  height: 1.8rem;
+  width: 15rem;
+  border: 1px solid #596d48;
+  outline: none;
+  padding-left: 0.25rem;
+  border-radius: 0.25rem;
+}
+.sign-in-side .form-block #sign-in div input:required {
+  border: 2px solid #b91d1d;
+}
+.sign-in-side .form-block #sign-in div input:focus {
+  border: 2px solid #3b64d7;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+.sign-in-side .submit-block {
+  padding-left: 5rem;
+}
+.sign-in-side .submit-block button {
+  margin-top: 2rem;
+  border: none;
+  background-color: #596d48;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+}
+.sign-in-side .submit-block p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.sign-in-side .submit-block p a {
+  color: #6d7f5e;
+}
+
+/*# sourceMappingURL=style.css.map */

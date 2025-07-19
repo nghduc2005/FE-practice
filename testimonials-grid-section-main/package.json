@@ -1,0 +1,12 @@
+{
+  "name": "testimonials-grid-section-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "sass sass/main.sass dist/style.css --watch"
+  },
+  "dependencies": {
+    "sass": "^1.89.2"
+  }
+}

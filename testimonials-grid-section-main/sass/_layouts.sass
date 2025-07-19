@@ -1,0 +1,89 @@
+@import './_reset.sass'
+
+.box-content
+  margin-inline: 2rem
+  padding-top: 3rem
+  padding-bottom: 3rem
+  display: grid
+  grid-template-columns: 1fr
+  row-gap: 2rem
+
+.box-comment
+  padding: 2rem
+  display: grid
+  grid-template-columns: 1fr
+  row-gap: 1.5rem
+  border-radius: 0.75rem
+  color: $neutral-white
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15)
+  .info-block
+    display: flex
+    align-items: center
+    gap: 1.5rem
+    font-size: 1.2rem
+    .avatar
+      border-radius: 50%
+      border: 1px solid $neutral-grey-200
+      width: 3rem
+    .info span
+      display: block
+    .info .name
+      font-weight: $fw-bold
+      color: white
+    .info .role
+      font-weight: $fw-regular
+      color: $neutral-grey-200
+  .main-idea
+    font-size: 1.5rem
+    font-weight: $fw-bold
+  .quote
+    font-size: 1.2rem
+    color: $neutral-grey-200
+.daniel
+  background-image: url('../images/bg-pattern-quotation.svg')  
+  background-size: contain
+  background-repeat: no-repeat
+  background-size: 12%
+  background-position: top 1rem right 3rem
+  background-color: $pri-purple-500
+.jonathan
+  background-color: $neutral-grey-500
+.jeanette
+  background-color: $neutral-white
+  color: $neutral-grey-500
+  .info .name
+    // background-color: red
+    color: $neutral-grey-400 !important
+  .info .role
+    color: $neutral-grey-300 !important
+  .quote
+    color: $neutral-grey-300
+.patrick
+  background-color: $neutral-black
+  .main-idea
+    color: $neutral-grey-200
+.kira
+  background-color: $neutral-white
+  color: $neutral-grey-500
+  .info .name
+    // background-color: red
+    color: $neutral-grey-400 !important
+  .info .role
+    color: $neutral-grey-300 !important
+  .quote
+    color: $neutral-grey-300
+
+@media (min-width:1024px)
+  .box-content
+    gap: 2rem
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    .box-comment
+      box-shadow: 0 1.2rem 2.5rem rgba(0, 0, 0, 0.2)
+    .daniel
+      grid-column: 1 / span 2
+    .kira
+      grid-column: 4
+      grid-row: 1 / span 2
+    .patrick
+      grid-column: 2 / span 2

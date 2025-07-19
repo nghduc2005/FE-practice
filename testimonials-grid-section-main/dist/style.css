@@ -1,0 +1,146 @@
+@import 'https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+span, h2, p {
+  overflow-wrap: break-word;
+}
+
+html, body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  height: 100%;
+  font-size: 0.8125rem;
+  background-color: hsl(214, 17%, 92%);
+}
+
+.box-content {
+  margin-inline: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+
+.box-comment {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+  border-radius: 0.75rem;
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+.box-comment .info-block {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+.box-comment .info-block .avatar {
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 81%);
+  width: 3rem;
+}
+.box-comment .info-block .info span {
+  display: block;
+}
+.box-comment .info-block .info .name {
+  font-weight: 600;
+  color: white;
+}
+.box-comment .info-block .info .role {
+  font-weight: 500;
+  color: hsl(0, 0%, 81%);
+}
+.box-comment .main-idea {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.box-comment .quote {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 81%);
+}
+
+.daniel {
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: top 1rem right 3rem;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.jeanette {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.jeanette .info .name {
+  color: hsl(224, 10%, 45%) !important;
+}
+.jeanette .info .role {
+  color: hsl(200, 8%, 40%) !important;
+}
+.jeanette .quote {
+  color: hsl(200, 8%, 40%);
+}
+
+.patrick {
+  background-color: hsl(0, 0%, 7%);
+}
+.patrick .main-idea {
+  color: hsl(0, 0%, 81%);
+}
+
+.kira {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.kira .info .name {
+  color: hsl(224, 10%, 45%) !important;
+}
+.kira .info .role {
+  color: hsl(200, 8%, 40%) !important;
+}
+.kira .quote {
+  color: hsl(200, 8%, 40%);
+}
+
+@media (min-width: 1024px) {
+  .box-content {
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .box-content .box-comment {
+    box-shadow: 0 1.2rem 2.5rem rgba(0, 0, 0, 0.2);
+  }
+  .box-content .daniel {
+    grid-column: 1/span 2;
+  }
+  .box-content .kira {
+    grid-column: 4;
+    grid-row: 1/span 2;
+  }
+  .box-content .patrick {
+    grid-column: 2/span 2;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
