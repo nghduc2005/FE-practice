@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+    --color-gradient-from: #9F69B8;
+    --color-gradient-to: #318EC2;
+    --color-line-block: #B5A8F0;
+    --color-main: #DEE6EC;
+    --color-head: #FFFFFF;
+    --color-button: #4D8BCC;
+    --color-content: #333333;
+    --color-title: #ffffff;
+
+    --font-family-inter: "Inter", sans-serif;
+}
+
+@layer navigation {
+  .nav {
+    @apply grid grid-cols-1 gap-[18px]
+  }
+  .nav li a{
+    @apply capitalize text-title font-bold text-[24px] flex gap-[15px] items-center
+  }
+  .nav li a i {
+    @apply w-[22px]
+  }
+}
+
+@layer button {
+  .button {
+    @apply box-border capitalize text-title font-bold text-[16px] px-[50px] py-[8px] bg-button rounded-[16px]
+  }
+}
+
+@layer title {
+  main .title-block {
+    @apply font-bold text-[24px] mb-[17px] capitalize
+  }
+}
+
+@layer box {
+  main .box {
+    @apply pt-[15px] pl-[35px] pr-[57px] pb-[19px] w-[370px] border-l-[14px] rounded-[16px] border-line-block text-[16px] bg-head shadow-[4px_4px_4px_#000000]
+  }
+  main .box span {
+    @apply font-bold block mb-[15px]
+  }
+  main .box p {
+    @apply mb-[47px]
+  }
+  main .box div {
+    @apply flex place-content-end gap-[20px]
+  }
+  main .box div i {
+    @apply w-[22px] 
+  }
+}
