@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+@theme {
+  --color-share-active: hsl(217, 19%, 35%);
+  --color-title: hsl(214, 17%, 51%);
+  --color-button: hsl(212, 23%, 69%);
+  --color-background: hsl(210, 46%, 95%);
+
+  --font-family-main: "Manrope", sans-serif;
+
+  --font-weight-title: 700;
+  --font-weight-sub-title: 500;
+}
+
+@layer active {
+  
+}

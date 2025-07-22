@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../dist/output.css">
+  <title>Article preview component</title>
+</head>
+<body class="bg-background">
+  <div class="mx-auto w-[80%] mt-[20px] rounded-[16px] bg-white md:flex">    
+    <img src="./images/drawers.jpg" alt="" class="w-[40%] rounded-tl-[16px] rounded-bl-[16px]">
+    <div class="p-[20px] grid grid-cols-1">
+      <div class="mb-[30px]">
+        <h2 class="font-title text-[30px] mb-[10px]">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+        <p class="font-sub-title text-[20px]">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+      </div>
+      <div class="relative">
+        <div class="share-box hidden z-[999] bg-share-active p-[20px] align-middle rounded-[16px] top-[-100%] right-[-10%]">
+          <p class="tracking-[5px] mr-[20px] inline-block z-[999] text-white">SHARE</p>
+          <img src="./images/icon-facebook.svg" alt="" class="inline-block mr-[20px] z-[999]">
+          <img src="./images/icon-twitter.svg" alt="" class="inline-block mr-[20px] z-[999]"> 
+          <img src="./images/icon-pinterest.svg" alt="" class="inline-block z-[999]">
+          <div class="rectangle hidden bg-share-active rotate-[90] w-[50px] h-[50px] left-1/2 right-1/2 rotate-45 top-[25%] z-[-1]"></div>
+        </div>
+        <div class="relative">
+          <img src="./images/avatar-michelle.jpg" alt=""
+            class="w-[60px] inline-block rounded-[30px] mr-[10px]"
+          >
+          <div class="inline-block align-middle">
+            <h3 class="font-title">Michelle Appleton</h3>
+            <p class="text-[14px]">28 Jun 2020</p>
+          </div>
+          <div class="share absolute inline-block align-middle right-0 p-[19px] w-[60px] bg-background rounded-[50px] text-title
+            hover:text-white hover:bg-share-active
+          ">
+            <i class="fa-solid fa-share text-[20px]"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../src/js/script.js"></script>
+</body>
+</html>

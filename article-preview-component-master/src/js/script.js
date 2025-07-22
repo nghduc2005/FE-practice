@@ -1,0 +1,16 @@
+const buttonShare = document.querySelector('.share')
+const shareBox = document.querySelector('.share-box')
+const rectangle = document.querySelector  ('.rectangle')
+console.log(buttonShare, shareBox, rectangle)
+buttonShare.addEventListener('mouseenter', () => {
+  shareBox.classList.add('absolute')
+  rectangle.classList.add('absolute')
+  shareBox.classList.remove('hidden')
+  rectangle.classList.remove('hidden')
+})
+buttonShare.addEventListener('mouseleave', () => {
+  shareBox.classList.remove('absolute')
+  rectangle.classList.remove('absolute')
+  shareBox.classList.add('hidden')
+  rectangle.classList.add('hidden')
+})
