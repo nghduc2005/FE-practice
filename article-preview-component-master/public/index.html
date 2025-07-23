@@ -8,33 +8,40 @@
   <title>Article preview component</title>
 </head>
 <body class="bg-background">
-  <div class="mx-auto w-[80%] mt-[20px] rounded-[16px] bg-white md:flex">    
-    <img src="./images/drawers.jpg" alt="" class="w-[40%] rounded-tl-[16px] rounded-bl-[16px]">
+  <div class="mx-auto w-[80%] mt-[20px] rounded-[16px] bg-white flex max-md:grid max-md:grid-cols-1 max-md:w-[90%]">    
+    <img src="./images/drawers.jpg" alt="" class="w-[40%] rounded-tl-[16px] rounded-bl-[16px] 
+    max-md:w-full max-md:object-cover max-md:rounded-bl-[0px]  max-md:rounded-tr-[16px]
+    ">
     <div class="p-[20px] grid grid-cols-1">
       <div class="mb-[30px]">
-        <h2 class="font-title text-[30px] mb-[10px]">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
-        <p class="font-sub-title text-[20px]">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+        <h2 class="font-title text-[30px] mb-[10px] max-md:text-[25px]
+        ">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+        <p class="font-sub-title text-[20px] max-md:text-[15px]">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
       </div>
-      <div class="relative">
-        <div class="share-box hidden z-[999] bg-share-active p-[20px] align-middle rounded-[16px] top-[-100%] right-[-10%]">
+      <div class="relative max-md:block">
+        <div class="share-box hidden z-[999] bg-share-active p-[20px] align-middle rounded-[16px] top-[-100%] right-[-10%]
+          max-md:top-0 max-md:right-0 max-md:w-[calc(100%+40px)] max-md:rounded-tl-[0px] max-md:rounded-tr-[0px] max-md:left-[-20px]
+        ">
           <p class="tracking-[5px] mr-[20px] inline-block z-[999] text-white">SHARE</p>
           <img src="./images/icon-facebook.svg" alt="" class="inline-block mr-[20px] z-[999]">
           <img src="./images/icon-twitter.svg" alt="" class="inline-block mr-[20px] z-[999]"> 
           <img src="./images/icon-pinterest.svg" alt="" class="inline-block z-[999]">
-          <div class="rectangle hidden bg-share-active rotate-[90] w-[50px] h-[50px] left-1/2 right-1/2 rotate-45 top-[25%] z-[-1]"></div>
+          <div class="rectangle hidden bg-share-active rotate-[90] w-[50px] h-[50px] left-1/2 right-1/2 rotate-45 top-[25%] z-[-1]
+            max-md:hidden
+          "></div>
         </div>
-        <div class="relative">
+        <div class="relative p-[20px]">
           <img src="./images/avatar-michelle.jpg" alt=""
-            class="w-[60px] inline-block rounded-[30px] mr-[10px]"
+            class="w-[60px] inline-block rounded-[30px] mr-[10px] max-md:w-[40px]"
           >
           <div class="inline-block align-middle">
             <h3 class="font-title">Michelle Appleton</h3>
             <p class="text-[14px]">28 Jun 2020</p>
           </div>
-          <div class="share absolute inline-block align-middle right-0 p-[19px] w-[60px] bg-background rounded-[50px] text-title
-            hover:text-white hover:bg-share-active
+          <div class="share absolute inline-block align-middle right-0 p-[19px] max-md:p-[8px] w-[60px] max-md:w-[40px] bg-background rounded-[50px] text-title
+            hover:text-white hover:bg-share-active max-md:z-[9999] max-md:hover:bg-button max-md:top-[10px]
           ">
-            <i class="fa-solid fa-share text-[20px]"></i>
+            <i class="fa-solid fa-share text-[20px] max-md:text-[15px] max-md:translate-x-[40%]"></i>
           </div>
         </div>
       </div>
