@@ -1,16 +1,16 @@
-const buttonShare = document.querySelector('.share')
+const shareButton = document.querySelector('.share-button')
 const shareBox = document.querySelector('.share-box')
-const rectangle = document.querySelector  ('.rectangle')
-console.log(buttonShare, shareBox, rectangle)
-buttonShare.addEventListener('mouseenter', () => {
-  shareBox.classList.add('absolute')
-  rectangle.classList.add('absolute')
-  shareBox.classList.remove('hidden')
-  rectangle.classList.remove('hidden')
-})
-buttonShare.addEventListener('mouseleave', () => {
-  shareBox.classList.remove('absolute')
-  rectangle.classList.remove('absolute')
-  shareBox.classList.add('hidden')
-  rectangle.classList.add('hidden')
+const shareIcon = shareButton.querySelector('i')
+shareButton.addEventListener('click', () => {
+  if(shareBox.classList.contains('hidden')) {
+    shareBox.classList.remove('hidden')
+    shareBox.classList.add('flex')
+    shareButton.style.backgroundColor = 'hsl(214, 17%, 51%)'
+    shareIcon.style.color = '#ffffff'    
+  } else {
+    shareBox.classList.remove('flex')
+    shareBox.classList.add('hidden')
+    shareButton.style.backgroundColor = 'hsl(210, 46%, 95%)'
+    shareIcon.style.color = 'hsl(214, 17%, 51%)' 
+  }
 })

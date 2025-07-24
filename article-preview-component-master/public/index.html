@@ -7,46 +7,53 @@
   <link rel="stylesheet" href="../dist/output.css">
   <title>Article preview component</title>
 </head>
-<body class="bg-background">
-  <div class="mx-auto w-[80%] mt-[20px] rounded-[16px] bg-white flex max-md:grid max-md:grid-cols-1 max-md:w-[90%]">    
-    <img src="./images/drawers.jpg" alt="" class="w-[40%] rounded-tl-[16px] rounded-bl-[16px] 
-    max-md:w-full max-md:object-cover max-md:rounded-bl-[0px]  max-md:rounded-tr-[16px]
+<body class="bg-background grid items-center h-[100vh]">
+  <main class="max-w-[70%] flex ml-auto mr-auto max-md:grid max-md:grid-cols-1 max-md:max-w-[90%]">
+    <img src="./images/drawers.jpg" alt="" class="max-w-[40%] object-cover
+      rounded-tl-[1rem] rounded-bl-[1rem] max-md:max-w-[100%] max-md:rounded-bl-[0rem] max-md:rounded-tr-[1rem]
     ">
-    <div class="p-[20px] grid grid-cols-1">
-      <div class="mb-[30px]">
-        <h2 class="font-title text-[30px] mb-[10px] max-md:text-[25px]
-        ">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
-        <p class="font-sub-title text-[20px] max-md:text-[15px]">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
-      </div>
-      <div class="relative max-md:block">
-        <div class="share-box hidden z-[999] bg-share-active p-[20px] align-middle rounded-[16px] top-[-100%] right-[-10%]
-          max-md:top-0 max-md:right-0 max-md:w-[calc(100%+40px)] max-md:rounded-tl-[0px] max-md:rounded-tr-[0px] max-md:left-[-20px]
-        ">
-          <p class="tracking-[5px] mr-[20px] inline-block z-[999] text-white">SHARE</p>
-          <img src="./images/icon-facebook.svg" alt="" class="inline-block mr-[20px] z-[999]">
-          <img src="./images/icon-twitter.svg" alt="" class="inline-block mr-[20px] z-[999]"> 
-          <img src="./images/icon-pinterest.svg" alt="" class="inline-block z-[999]">
-          <div class="rectangle hidden bg-share-active rotate-[90] w-[50px] h-[50px] left-1/2 right-1/2 rotate-45 top-[25%] z-[-1]
-            max-md:hidden
-          "></div>
-        </div>
-        <div class="relative p-[20px]">
-          <img src="./images/avatar-michelle.jpg" alt=""
-            class="w-[60px] inline-block rounded-[30px] mr-[10px] max-md:w-[40px]"
-          >
-          <div class="inline-block align-middle">
-            <h3 class="font-title">Michelle Appleton</h3>
-            <p class="text-[14px]">28 Jun 2020</p>
-          </div>
-          <div class="share absolute inline-block align-middle right-0 p-[19px] max-md:p-[8px] w-[60px] max-md:w-[40px] bg-background rounded-[50px] text-title
-            hover:text-white hover:bg-share-active max-md:z-[9999] max-md:hover:bg-button max-md:top-[10px]
+    <article class=" bg-white grid align-middle place-content-center grid-cols-[80%]
+      rounded-tr-[1rem] rounded-br-[1rem] max-md:rounded-tr-[0rem] max-md:rounded-bl-[1rem]
+    ">
+      <div class="flex flex-col mt-[2rem] gap-[1.5rem] max-md:mt-[1rem]">
+        <section class="grid gap-[1rem]">
+          <h2 class="text-[1.5rem] font-bold text-share-active">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+          <p class="text-title text-[0.975rem]">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+        </section>
+        <section class="flex py-[1.5rem] max-md:py-[1rem] justify-between relative items-center">
+          <div class="absolute top-[-5rem] right-[-8.25rem] 
+            max-md:left-[-12.5%] max-md:right-[-12.5%] max-md:top-[0rem] 
           ">
-            <i class="fa-solid fa-share text-[20px] max-md:text-[15px] max-md:translate-x-[40%]"></i>
+            <div class="share-box relative bg-share-active flex gap-[1.8rem] px-[3rem] py-[1.5rem]
+              rounded-[1rem] justify-center text-button tracking-[0.3rem]
+              max-md:rounded-tl-[0rem] max-md:rounded-tr-[0rem] max-md:py-[1.75rem]
+              max-md:justify-start items-center max-md:gap-[1rem]
+            ">
+              <p class="z-[999] max-md:text-[1rem]">SHARE</p>
+              <img src="./images/icon-facebook.svg" alt="" class="z-[999] max-md:w-[1.5rem]">
+              <img src="./images/icon-twitter.svg" alt="" class="z-[999] max-md:w-[1.5rem]">
+              <img src="./images/icon-pinterest.svg" alt="" class="z-[999] max-md:w-[1.5rem]">
+              <div class="z-[1] absolute bg-share-active w-[3rem] h-[3rem] bottom-[0rem] rotate-45 max-md:hidden"></div>
+            </div> 
           </div>
-        </div>
+          <div class="flex justify-between">
+            <img src="./images/avatar-michelle.jpg" alt=""
+            class="w-[3rem] rounded-[3rem] mr-[0.875rem]"
+            >
+            <article class="grid">
+              <h3 class="inline-block font-medium text-share-active">Michelle Appleton</h3>
+              <p class="inline-block text-title">28 Jun 2020</p>
+            </article>
+          </div>
+          <div class="share-button bg-background w-[3rem] rounded-[3rem] grid place-content-center h-[3rem]
+            z-[999] max-md:w-[2rem] max-md:h-[2rem]
+          ">
+            <i class="fa-solid fa-share text-[1.5rem] inline-block text-title max-md:text-[1rem]"></i>
+          </div>
+        </section>
       </div>
-    </div>
-  </div>
+    </article>
+  </main>
   <script src="../src/js/script.js"></script>
 </body>
 </html>

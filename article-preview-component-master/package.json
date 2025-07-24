@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./dist/output.css --minify"
+    "start": "npx @tailwindcss/cli -i ./src/styles/input.css -o ./dist/output.css --watch"
   },
   "dependencies": {
     "tailwindcss": "^4.1.11"
