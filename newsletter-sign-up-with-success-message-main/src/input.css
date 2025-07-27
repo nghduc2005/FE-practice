@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap';
+@theme {
+--color-red: hsl(4, 100%, 67%);
+--color-blue-800:hsl(234, 29%, 20%);
+--color-blue-700:hsl(235, 18%, 26%);
+--color-grey:hsl(0, 0%,58%);
+--color-white:hsl(0, 0%, 100%);
+
+--font-family-main: "Roboto", sans-serif;
+
+--breakpoint-tablet: 54rem;
+}
+
+@layer list {
+  .list-bullet {
+    @apply flex gap-[1rem] items-center;
+  }
+  .list-bullet img {
+    @apply w-[1.5rem] h-[1.5rem] max-tablet:w-[1.2rem] max-tablet:h-[1.2rem];
+  }
+}
