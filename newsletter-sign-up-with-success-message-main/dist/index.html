@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+  <title>Newsletter sign-up form with success message</title>
+</head>
+<body class="bg-blue-700 grid place-content-center h-[100vh] font-family-main">
+
+  <!-- Sign-up form start -->
+  <main class="flex max-w-[90%] bg-white mr-auto ml-auto rounded-2xl items-center
+  max-sm:ml-0 max-sm:mr-0 max-sm:max-w-[100%] max-sm:grid max-sm:grid-cols-1
+  ">
+    <article class=" max-w-[60%] gap-[0.2rem] mx-[2.5rem] my-[3rem] max-tablet:my-[1.5rem] max-tablet:mx-[1.5rem]
+    max-sm:order-2 max-sm:max-w-[100%]
+    ">
+      <h1 class="text-[3rem] font-bold max-tablet:text-[2.5rem]">
+        Stay updated!
+      </h1>
+      <p class="">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+      <ul class="mt-[1rem] grid grid-cols-1 gap-[1rem] list-inside mb-[2rem] max-tablet:gap-[0.5rem] max-tablet:mb-[1rem]
+      ">
+        <li class="list-bullet">
+          <img src="./assets/images/icon-list.svg" alt="">Product discovery and building what matters</li>
+        <li class="list-bullet">
+          <img src="./assets/images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
+        <li class="list-bullet">
+          <img src="./assets/images/icon-list.svg" alt="">And much more!</li>
+      </ul>
+      <form id="register-form" class="relative">
+        <label for="email" class="font-[700] mb-[1rem] block">
+          Email address
+        </label>
+        <input type="email" placeholder="email@company.com" required
+        id="email" name="email" class="peer block p-[0.8rem] w-[100%] rounded-[0.5rem] border-[var(--color-grey)] border-[1px] mb-[1rem] relative
+        invalid:border-[var(--color-red)] invalid:bg-[#ffe8e6] invalid:text-[var(--color-red)] invalid:outline-0
+        "
+        >
+        <span class="absolute top-0 right-0 text-red font-bold hidden peer-invalid:!inline-block">Valid email required</span>
+        <button class="text-center w-[100%] bg-blue-800 text-white font-bold py-[0.8rem] rounded-[0.5rem] max-tablet:text-[0.825rem]
+        hover:bg-red hover:shadow-[0_10px_25px_rgba(0,0,0,0.15)] cursor-pointer
+        ">
+          Subscribe to monthly newsletter
+        </button>
+      </form>
+    </article>
+    <picture class="my-[1rem] mr-[1rem] max-sm:order-1 max-sm:my-[0rem] max-sm:mr-auto max-sm:ml-auto">
+      <source srcset="./assets/images/illustration-sign-up-desktop.svg" alt="" media="(min-width: 40rem)">
+      <img src="./assets/./images/illustration-sign-up-mobile.svg" alt="">
+    </picture>
+  </main>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <section class="bg-white max-w-[50%] ml-auto mr-auto p-[2.5rem] rounded-2xl gap-[1.5rem] hidden grid-cols-1 max-sm:max-w-[100%] max-sm:h-[100vh]
+  max-sm:gap-[10rem] max-sm:py-[4rem]
+  ">
+    <div class="grid gap-[1rem]">
+      <img src="./assets/images/icon-success.svg" alt="" class="max-sm:max-w-[3rem] max-sm:max-h-[3rem]">
+      <h2 class="text-[3.5rem] font-bold max-tablet:text-[2.5rem] max-sm:text-[2.5rem]">
+        Thanks for subscribing!
+      </h2>
+      <p>
+        A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+    <button class="p-[0.8rem] bg-blue-700 hover:bg-red rounded-[0.5rem] text-white hover:shadow-[0_10px_25px_rgba(0,0,0,0.15)] cursor-pointer
+    max-sm:max-h-[4rem]
+    ">
+      Dismiss message
+    </button>
+  </section>
+
+  <!-- Success message end -->
+   <script src="./script.js"></script>
+</body>
+</html>
